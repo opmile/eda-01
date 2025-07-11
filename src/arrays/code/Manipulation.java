@@ -88,4 +88,61 @@ public class Manipulation {
 
         return newArray;
     }
+
+    // 09
+    public static int secondLargestElement(int[] arr) {
+        int largest = -1;
+        int secondLargest = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
+            }
+        }
+
+        return secondLargest;
+    }
+
+    // 10
+    public static boolean areEqual(int[] arr1, int[] arr2) {
+        if (arr1.length != arr2.length) {
+            return false;
+        } // checking for length
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            } // checking for order
+        }
+        return true;
+    }
+
+    // 11
+    public static void removeDuplicates(int[] arr) {
+        int left = 0;
+        int right = arr.length - 1;
+        int count = 0;
+
+        while (left < right) {
+            if (arr[left] != arr[right]) {
+                right--;
+            } else {
+                arr[left] = 0;
+                left++;
+                count++;
+            }
+        }
+
+        int[] newArr = new int[count];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                newArr[i] = arr[i];
+            }
+        }
+    }
 }

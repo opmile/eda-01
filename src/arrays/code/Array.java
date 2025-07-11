@@ -58,6 +58,29 @@ public class Array {
         Manipulation.rotateArray(rotateArray, 2);
         System.out.println(Arrays.toString(rotateArray));
 
-        // 08 - interpolate two same size arrays
+        // 08 - interpolate two arrays
+
+        // 08.1 - same size
+        int[] arrA = {1, 3, 5};
+        int[] arrB = {2, 4, 6};
+        int[] interpolatedArraySS = Manipulation.interpolateSameSizeArray(arrA, arrB);
+        System.out.println(Arrays.toString(interpolatedArraySS));
+
+        // 08.2 - different size
+        int[] arrC = {1, 3, 5, 7, 9, 10};
+        int[] arrD = {2, 4, 6, 8};
+        int[] interpolatedArrayDS = Manipulation.interpolateDifferentSizeArray(arrC, arrD);
+        System.out.println(Arrays.toString(interpolatedArrayDS));
+
+        // 09 - finding second-largest element
+        int[] secondLargest = {10, 20, 30, 100};
+        System.out.println(Manipulation.secondLargestElement(secondLargest));
+
+        // 10 - are them equal?
+        int[] equal1 = {1, 2, 3};
+        int[] equal2 = {1, 2, 3};
+        System.out.println(Manipulation.areEqual(equal1, equal2));
+
+        // 11 - remove duplicates
     }
 }
