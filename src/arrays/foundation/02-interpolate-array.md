@@ -1,4 +1,4 @@
-# 02 - interpolar dois arrays
+## 02 - interpolar dois arrays
 #### *a) arrays de mesmo tamanho*
 ```
 input:

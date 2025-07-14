@@ -1,4 +1,4 @@
-#### 1. usando array temporário
+### 1. usando array temporário
 > *dado um array `arr[]` de inteiros, remova os elementos duplicados*
 
 a lógica por trás dessa solução é:

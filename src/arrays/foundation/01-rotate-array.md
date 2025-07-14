@@ -1,4 +1,4 @@
-# 01 - rotação para direita (clockwise)
+## 01 - rotação para direita (clockwise)
 > dado um array e um número `d`, rotacione os elementos para direita `d` vezes
 
 o que é "rotacionar para direita"?
@@ -77,6 +77,9 @@ public class RotateArray {
 			int temp = arr[start];
 			arr[start] = arr[end];
 			arr[end] = temp;
+            
+            start++;
+            end--;
 		}
 	}
 

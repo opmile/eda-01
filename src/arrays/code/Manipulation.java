@@ -123,26 +123,7 @@ public class Manipulation {
     }
 
     // 11
-    public static void removeDuplicates(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
-        int count = 0;
+    public static void removeDuplicatesSorted(int[] arr) {
 
-        while (left < right) {
-            if (arr[left] != arr[right]) {
-                right--;
-            } else {
-                arr[left] = 0;
-                left++;
-                count++;
-            }
-        }
-
-        int[] newArr = new int[count];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != 0) {
-                newArr[i] = arr[i];
-            }
-        }
     }
 }
